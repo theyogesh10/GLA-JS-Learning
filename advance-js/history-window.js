@@ -1,3 +1,5 @@
+// History Window/Global Object
+
 console.log( history );
 
 history.back();
