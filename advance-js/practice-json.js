@@ -32,5 +32,5 @@ scoresArray.push( { subject: "Geography", score: 88 } );
 
 // console.log( scoresArray );
 
-var updatedScore = JSON.stringify( scoresArray );
+var updatedScore = JSON.stringify( scoresArray );     //or var updatedScore = JSON.stringify( scoresArray, null, 4 );
 console.log( updatedScore );
