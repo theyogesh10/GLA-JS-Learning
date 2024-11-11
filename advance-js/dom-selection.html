@@ -17,14 +17,30 @@
     </section>
 
     <script>
+        // id selector
         var para1 = document.getElementById( 'para-1' );
         console.log( para1 );
 
+        // class selector
         var xyzElement = document.getElementsByClassName( 'xyz' );
         console.log( xyzElement );
         console.log( xyzElement[0] );
         console.log( xyzElement[1] ); 
         console.log( xyzElement.length );
+
+        // tag selector
+        var tSel = document.getElementsByTagName( 'p' );
+        console.log( tSel );
+        console.log( tSel[0] );
+
+        // query selector
+        var el = document.querySelector( '.xyz' );
+        console.log( el );
+
+        var els = document.querySelectorAll( '.xyz' );
+        console.log( els );
+        console.log( els[0] );
+
     </script>
 </body>
 </html>
