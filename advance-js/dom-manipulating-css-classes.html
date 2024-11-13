@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .big {
+        font-size: 2em;
+    }
+    .red {
+        color: red;
+    }
+</style>
+<body>
+    <p class="red">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt ullam necessitatibus consectetur. Deserunt, repellendus minus a, fugit voluptatum expedita repudiandae, obcaecati impedit iure natus error pariatur facere itaque tempora?
+        <button onclick="changeColor();">Change color</button>
+    </p>
+    <script>
+        function changeColor() {
+            document.getElementsByTagName( "p" )[0].classList.remove( "red" );
+            document.getElementsByTagName( "p" )[0].classList.add( "big" );
+        }
+    </script>
+</body>
+</html>
