@@ -1,0 +1,30 @@
+<!-- Given the following HTML document, fill in the blanks with statements to change the link href to https://www.bing.com and link text to Bing (instead of Google). Also have the link open the page in a separate window (tab). For this you need to set target attribute to _blank. Use setAttribute( ) to set the appropriate attribute and value. -->
+ 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.google.com">Google</a>
+
+    <button onclick="switchToBing()">Switch to Bing</button>
+
+    <script>
+
+        function switchToBing() {
+
+            var link = document.querySelector('a');
+
+            link.setAttribute('href', 'https://www.bing.com');  // Change the href to Bing's URL
+            link.textContent = 'Bing';  // Change the link text to "Bing"
+            link.setAttribute('target', '_blank');  // Set the target attribute to open in a new tab
+
+        }
+
+        </script>
+</body>
+</html>
