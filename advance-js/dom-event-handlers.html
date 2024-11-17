@@ -6,8 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <p>
+    <p id="para-1">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ipsam laborum minima ut sunt consequatur dicta accusamus blanditiis facere, placeat, aut asperiores id sint suscipit nulla vero pariatur. Corporis, deleniti!
+    </p>
+    <p id="para-2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quasi saepe quo hic libero impedit, minima beatae omnis! Sed veritatis saepe minus labore nisi repellendus optio ullam omnis odit qui.
     </p>
 
     <button>Click me</button>
@@ -18,9 +21,27 @@
         };
 
         function handleClick() {
-            alert( 'I was clicked' );
+            alert( 'I was clicked 1' );
         }
-        document.querySelector( 'button' ).onclick = handleClick;
+
+        function handleClick2() {
+            alert( 'I was clicked 2' );
+        }
+
+        document.querySelector( 'button' ).onclick = handleClick; 
+        document.querySelector( 'button' ).onclick = handleClick2; // handleclick2 function replaced handleClick function, so only one event handler set can we using this way of event handle
+
+        document.getElementById( 'para-1' ).onmouseover = function() {
+            console.log( 'mouse is over para-1' );
+        };
+
+        document.getElementById( 'para-2' ).addEventListener( 'mouseover', function() {
+            console.log( 'mouse is over para-2 (1)' );
+        });
+
+        document.getElementById( 'para-2' ).addEventListener( 'mouseover', function() {
+            console.log( 'mouse is over para-2 (2)' );
+        });
     </script>
 </body>
 </html>
