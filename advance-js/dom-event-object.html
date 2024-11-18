@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click me</button>
+    <a href="https://www.google.com">Google search page</a>
+
+    <script>
+        document.querySelector( 'button' ).addEventListener( 'click', function( event ) {
+            console.log( event );
+        });
+
+        document.querySelector( 'a' ).addEventListener( 'click', function( event ) {
+            if( !confirm( 'Are you sure you want to leave my beautiful web site?' ) ) {
+                event.preventDefault();
+            }
+        });
+
+    </script>
+    
+</body>
+</html>
