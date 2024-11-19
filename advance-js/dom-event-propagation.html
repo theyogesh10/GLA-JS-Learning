@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div-gp, #div-p, #div-c {
+            border: 1px solid crimson;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-gp">
+        <div id="div-p">
+            <div id="div-c">
+                I am child div
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector( '#div-gp' ).addEventListener( 'click', function() {
+            console.log( 'div-gp clicked');
+            console.log( this );
+            console.log( event.target );
+        });
+
+        document.querySelector( '#div-p' ).addEventListener( 'click', function( event ) {
+            console.log( 'div-p clicked');
+            event.stopPropagation(); 
+            console.log( this );           
+             console.log( event.target );
+        });
+
+        document.querySelector( '#div-c' ).addEventListener( 'click', function() {
+            console.log( 'div-c clicked');
+            console.log( this );
+            console.log( event.target );
+        });
+    </script>
+</body>
+</html>
