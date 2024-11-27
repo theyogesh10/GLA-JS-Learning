@@ -17,5 +17,5 @@ console.log( numbers );
 // console.log( numbers );
 
 for( let [ key, value ] of numbers) {
-    console.log( `${key} = ${value}` )
+    console.log( `${key} = ${value}` );
 }
