@@ -25,4 +25,4 @@ fetch( 'https://jsonplaceholder.typicode.com/todos',
     }
 )
 .then( response => response.json() )
-.then( value => console.log( value ) )
+.then( value => console.log( value ) );
