@@ -10,8 +10,8 @@ const newTodo = {
     "userId": 1,
     "title": "quis ut nam facilis et officia qui",
     "completed": false
-  }
-  
+  };
+
 // POST data
 fetch( 'https://jsonplaceholder.typicode.com/todos', 
     {
