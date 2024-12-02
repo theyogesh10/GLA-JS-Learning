@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script type="module">
+        import Cmplx, { sum, diff, product as multiply } from "./index.js";
+        import { product } from "./store.js"
+
+        console.log(sum(10, 20));         
+        console.log(diff(10, 20));        
+        console.log(product('Soap', 50)); 
+        console.log(multiply(10, 20));
+        
+        const cmplx =new Cmplx( 10, 20 );
+        console.log( cmplx.toString() );
+    </script>
+</body>
+</html>
